@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            height:100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        #container{width:650px;
+            background-color: rgb(200, 201, 206);
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px 25px;
+
+        }
+        h2{
+            text-align: center;
+            margin:10px 0;
+        }
+        h3,h5{
+            text-align: center;
+            margin:0;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+        #form{
+            
+            display:flex;
+            justify-content: space-between;
+              
+        }
+        section{
+            margin-bottom: 15px;
+            padding:8px;
+            
+            background-color: rgb(201, 198, 156);
+            font-size: 1.2em;
+            border-radius: 8px;
+        
+        }
+        span{
+            font-size: 1.2em;
+        }
+        input{
+            width:70px;
+            padding:10px;
+            border:none;
+            outline: none;
+            margin-bottom: 5px;
+        }
+        select{
+            padding:5px;
+        }
+        td{
+            width:100px;
+            
+        }
+        button{
+            width:100%;
+            padding:10px 5px;
+            background-color: rgb(238, 142, 52);
+            border:none;
+            outline:none;
+            margin-bottom: 20px;
+            font-weight: bold;
+            font-size: 1.5em;
+            color:white;
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color:rgb(202, 104, 38) ;
+            box-shadow: 0px 1px 13px 2px #444242;;
+        }
+        #punkt{
+            text-align: center;
+            padding:10px;
+            background-color: rgb(218, 233, 88);
+            font-weight: bold;
+            margin-right: 5px;
+            margin-bottom: 30px;
+            display: none;
+            font-size: 1.5em;
+        }
+        #erg{
+            text-align: center;
+            padding:5px 10px;
+            background-color: rgb(129, 207, 84);
+            display: none;
+            margin-bottom: 20px;           
+        
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+    <h2>B2 Prüfung Rechner</h2>
+    <div id="form">
+        <div id="sch"><h3>Schriftliche Prüfung</h3>
+            <section><h5>Hörverstehen</h5>
+                <table>
+                    <tr>
+                        <td>Hören-1</td>
+                        <td><select id="h1">
+                            <option>Tragen Sie bitte die richtige Antwort ein</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Hören-2</td>
+                        <td><select id="h2">
+                            <option>Tragen Sie bitte die richtige Antwort ein</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Hören-3</td>
+                        <td><select id="h3">
+                            <option>Tragen Sie bitte die richtige Antwort ein</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            </select>
+                        </td>
+                    </tr>
+
+
+
+                </table>
+            </section>
+
+
+            <section><h5>Leseverstehen</h5>
+                <table>
+                    <tr>
+                        <td>Lesen-1</td>
+                        <td><select id="l1">
+                            <option>Tragen Sie bitte die richtige Antwort ein</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Lesen-2</td>
+                        <td><select id="l2">
+                            <option>Tragen Sie bitte die richtige Antwort ein</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Lesen-3</td>
+                        <td><select id="l3">
+                            <option>Tragen Sie bitte die richtige Antwort ein</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            </select>
+                        </td>
+                    </tr>
+
+
+
+
+                </table>
+            </section>
+
+            <section><h5>Sprachbausteine</h5>
+                <table>
+                    <tr>
+                        <td>SB-1</td>
+                        <td><select id="sb1">
+                            <option>Tragen Sie bitte die richtige Antwort ein</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>SB-2</td>
+                        <td><select id="sb2">
+                            <option>Tragen Sie bitte die richtige Antwort ein</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            
+                            </select>
+                        </td>
+                    </tr>
+
+                </table>
+            </section>
+
+            <section><h5>Brief</h5>
+                <table>
+                    <tr>
+                        <td>Brief</td>
+                        <td><input type="text" id="b" placeholder="Max 45"></td>
+                    </tr>
+                </table>
+            </section>
+
+
+
+        </div>
+        <div id="mün"><h3>Mündliche Prüfung</h3>
+            <section><h5>Presentätion</h5>
+                <table>
+                    <tr>
+                        <td>Presentätion</td>
+                        <td><input type="text" id="pr" placeholder="Max 25" ></td>
+                    </tr>
+                </table>
+            </section>
+
+            <section><h5>Etwas Plannen</h5>
+                <table>
+                    <tr>
+                        <td>Etwas Plannen</td>
+                        <td><input type="text" id="ep" placeholder="Max 25" ></td>
+                    </tr>
+                </table>
+            </section>
+
+            <section><h5>Diskussion</h5>
+                <table>
+                    <tr>
+                        <td>Diskussion</td>
+                        <td><input type="text" id="di" placeholder="Max 25"></td>
+                    </tr>
+                </table>
+            </section>
+
+
+        </div>
+    </div>
+
+        <div><button onclick="emptyControl();">Rechnen</button></div>
+        <div><span id="punkt"></span></div><br>
+        <div><span id="erg"></span></div>
+    
+    </div>
+
+
+    <script>
+          
+
+        function check(){
+            
+            var t_1=hesapla_t1();
+            var t_2=hesapla_t2();
+            var top=t_1 + t_2;
+            document.getElementById("punkt").style.display="inline";
+
+            document.getElementById("punkt").innerHTML=top;
+            document.getElementById("erg").style.display="inline";
+            belge();
+
+        }
+
+        function emptyControl(){
+            var b=document.getElementById("b").value;
+            var pr = document.getElementById("pr").value;
+            var ep = document.getElementById("ep").value;
+            var di = document.getElementById("di").value;
+
+            if( (b=="") || (pr =="") || (ep=="") || (di =="")){
+                alert("Bitte füllen Sie alle benötigte Inputs aus!");
+            }else {
+                check();
+            }
+        }
+            
+        function hesapla_t1()
+        {
+            var h1=parseInt(document.getElementById("h1").value);
+            var h2=parseInt(document.getElementById("h2").value);
+            var h3=parseInt(document.getElementById("h3").value);
+
+            var l1=parseInt(document.getElementById("l1").value);
+            var l2=parseInt(document.getElementById("l2").value);
+            var l3=parseInt(document.getElementById("l3").value);
+
+            var sb1=parseInt(document.getElementById("sb1").value);
+            var sb2=parseInt(document.getElementById("sb2").value);
+            
+            var b=parseInt(document.getElementById("b").value);
+            
+
+
+            var ht=(h1 * 5)+(h2 * 2.5)+(h3 *5);
+            var lt=(l1 * 5)+(l2 * 5)+(l3 * 2.5);
+            var sbt=(sb1 * 1.5)+(sb2 * 1.5);
+
+
+            var t1=ht+lt+sbt+b;
+            return t1;
+   
+
+        }
+
+             
+        function hesapla_t2()
+        {
+     
+           var pr = parseInt(document.getElementById("pr").value);
+           var ep = parseInt(document.getElementById("ep").value);
+           var di = parseInt(document.getElementById("di").value);
+
+            var t2=pr+ep+di;
+            return t2;
+         }
+             
+        function belge(){
+
+            var t_1=hesapla_t1();
+            var t_2=hesapla_t2();
+            var top=(t_1+t_2);
+            var belge;
+            
+            
+            if(t_1>=135 && t_2>=45 )
+            {
+                if(top>=180 && top<209 )
+                {
+                    belge="Ausreichend";
+       
+                }
+                if(top>=210 && top<239)
+                {
+                belge="Befredigent";
+                }
+                if(top>=240 && top<269)
+                {
+                belge="Gut";
+                }
+                if(top>=270)
+                {
+                belge="Pradikat";
+                }
+
+            document.getElementById("erg").innerHTML="Sie haben die B2-Prüfung mit "+belge+" bestanden. Herzlichen Glückwunsch!";
+
+
+            }
+
+            else if(t_1>=135 && t_2<45){
+
+            document.getElementById("erg").innerHTML="Sie haben von der schriftlichen Teil <b> "+t_1+" Punkte</b>und von der mündlichen Teil<b> "+t_2+" Punkte</b> ersammelt. <b>Sie müssen die mündliche Teil der Prüfung wiederholen.</b>";
+            document.getElementById("erg").style.backgroundColor="orange";
+            }
+            else if(t_1<135 && t_2>=45){
+            document.getElementById("erg").innerHTML="Sie haben von der schriftlichen Teil<b> "+t_1+"Punkte </b> und von der mündlichen Teil<b> "+t_2+"</b> Punkte ersammelt. <b>Sie müssen die schriftliche Teil der Prüfung wiederholen.</b>";
+            document.getElementById("erg").style.backgroundColor="orange";
+            }
+            else{
+            document.getElementById("erg").innerHTML="Sie sind von der sowohl schriftliche-, als auch der mündliche Teil der Prüfung durchgefallen. Sie müssen die B2-Prüfung wiederholen.";
+            document.getElementById("erg").style.backgroundColor="red";
+            document.getElementById("erg").style.color="white";
+            
+            }
+
+        }
+
+
+    </script>
+</body>
+</html>
